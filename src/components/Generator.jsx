@@ -78,8 +78,8 @@ export default function Generator(props) {
                 setPoison(type);
               }}
               className={
-                "bg-slate-950  border  duration-200 px-4 hover:border-blue-600 py-3 rounded-lg " +
-                (type === poison ? " border-blue-600" : " border-blue-400")
+                "bg-slate-950 border-4 duration-200 px-4 hover:border-blue-600 py-3 rounded-lg " +
+                (type === poison ? " border-blue-800" : " border-blue-300")
               }
               key={typeIndex}
             >
@@ -93,7 +93,7 @@ export default function Generator(props) {
         title={"Lock on targets"}
         description={"Select the muscles Group for annihilation."}
       />
-      <div className="bg-slate-950  border border-solid border-blue-400 rounded-lg flex flex-col">
+      <div className="bg-slate-950  border-4 border-solid border-blue-400 rounded-lg flex flex-col">
         <button
           onClick={toggleModal}
           className="relative p-3 flex items-center justify-center"
@@ -142,8 +142,8 @@ export default function Generator(props) {
                 setGoal(scheme);
               }}
               className={
-                "bg-slate-950 border  duration-200 hover:border-blue-600 py-3 rounded-lg px-4 " +
-                (scheme === goal ? " border-blue-600" : " border-blue-400")
+                "bg-slate-950 border-4  duration-200 hover:border-blue-600 py-3 rounded-lg px-4 " +
+                (scheme === goal ? " border-blue-800" : " border-blue-300")
               }
               key={schemeIndex}
             >
